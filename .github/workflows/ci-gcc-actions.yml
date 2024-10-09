@@ -24,6 +24,11 @@ jobs:
             run: |
              sudo apt update
              sudo apt-get install gcc
+          - name: install git and download
+            run: |
+              sudo apt install -y git
+              git clone https://github.com/faialotaibi/github-actions-c.git
+              cd github-actions-c
           - name: Configuretion gcc file
             run: |
               gcc hello.c -o hello
