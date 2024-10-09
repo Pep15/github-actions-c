@@ -23,7 +23,7 @@ jobs:
           - name: install gcc
             run: |
              apt update
-             apt install gcc
+             install gcc
           - name: Configuretion gcc file
             run: |
               gcc hello.c -o hello
