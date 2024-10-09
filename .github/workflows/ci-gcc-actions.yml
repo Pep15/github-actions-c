@@ -14,7 +14,9 @@ jobs:
     run-gcc:
         runs-on: ubuntu-latest
         steps:
-          - name: Check Setup
+          - name: checkout
+            uses: actions/checkout@v4
+          - name: Check Setup GCC
             uses: egor-tensin/setup-gcc@v1
             with:
                 version: latest
