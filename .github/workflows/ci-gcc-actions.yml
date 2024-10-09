@@ -30,7 +30,3 @@ jobs:
           - name: Run the Compiled Program
             run: |
               ./hello
-            
-          
-
-        
